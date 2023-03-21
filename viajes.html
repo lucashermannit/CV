@@ -28,6 +28,191 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
 
+        <style>
+
+
+            .timeline {
+            position: relative;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 15px 0;
+            }
+
+            .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: #006E51;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+            }
+
+            .capsula {
+            padding: 15px 30px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+            }
+
+            .capsula.left {
+            left: 0;
+            }
+
+            .capsula.right {
+            left: 50%;
+            }
+
+            .capsula::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 8px);
+            right: -8px;
+            background: #ffffff;
+            border: 2px solid #006E51;
+            border-radius: 16px;
+            z-index: 1;
+            }
+
+            .capsula.right::after {
+            left: -8px;
+            }
+
+            .capsula::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            top: calc(50% - 1px);
+            right: 8px;
+            background: #006E51;
+            z-index: 1;
+            }
+
+            .capsula.right::before {
+            left: 8px;
+            }
+
+            .capsula .date {
+            position: absolute;
+            display: inline-block;
+            top: calc(50% - 8px);
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #006E51;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 1;
+            }
+
+            .capsula.left .date {
+            right: -75px;
+            }
+
+            .capsula.right .date {
+            left: -75px;
+            }
+
+            .capsula .icon {
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            padding: 9px 0;
+            top: calc(50% - 20px);
+            background: #F6D155;
+            border: 2px solid #006E51;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #006E51;
+            z-index: 1;
+            }
+
+            .capsula.left .icon {
+            right: 56px;
+            }
+
+            .capsula.right .icon {
+            left: 56px;
+            }
+
+            .capsula .content {
+            padding: 30px 90px 30px 30px;
+            background: #F6D155;
+            position: relative;
+            border-radius: 0 500px 500px 0;
+            }
+
+            .capsula.right .content {
+            padding: 30px 30px 30px 90px;
+            border-radius: 500px 0 0 500px;
+            }
+
+            .capsula .content h2 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #006E51;
+            }
+
+            .capsula .content p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            }
+
+            @media (max-width: 767.98px) {
+            .timeline::after {
+                left: 90px;
+            }
+
+            .capsula {
+                width: 100%;
+                padding-left: 120px;
+                padding-right: 30px;
+            }
+
+            .capsula.right {
+                left: 0%;
+            }
+
+            .capsula.left::after, 
+            .capsula.right::after {
+                left: 82px;
+            }
+
+            .capsula.left::before,
+            .capsula.right::before {
+                left: 100px;
+                border-color: transparent #006E51 transparent transparent;
+            }
+
+            .capsula.left .date,
+            .capsula.right .date {
+                right: auto;
+                left: 15px;
+            }
+
+            .capsula.left .icon,
+            .capsula.right .icon {
+                right: auto;
+                left: 146px;
+            }
+
+            .capsula.left .content,
+            .capsula.right .content {
+                padding: 30px 30px 30px 90px;
+                border-radius: 500px 0 0 500px;
+            }
+            }
+        </style>
     </head>
     <!-- END HEAD -->
 
@@ -74,106 +259,101 @@
             <!-- Navbar -->
         </header>
         <!--========== END HEADER ==========-->
+        
+        <!--========== SLIDER ==========-->
+        <div class="promo-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 sm-margin-b-60">
+                        <div class="margin-b-30">
+                            <h1 class="promo-block-title">Lucas <br/> Hermann</h1>
+                            <p class="promo-block-text"><a href="https://www.instagram.com/lucashermannph/" class="social-icons"><i class="bi bi-instagram"></i></a> @lucashermannph </p>
+                            <p>
+                                Muy buenas, soy Lucas Hermann y me dedico a la fotografía desde 2014.
+                            </p>
+                            <p>
+                                Acá vas a encontrar el equipo que fui adquiriendo a lo largo de los años, el equipo que uso para salir a fotear, grabar y hasta editar.
+                                Espero que te sirva a modo de guía y pueda satisfacer esa curiosidad da saber que hay dentro de la mochila de un fotógrafo.
+                            </p>
+                        </div>
 
-       <!--========== SLIDER ==========-->
-       <div class="promo-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 sm-margin-b-60">
-                    <div class="margin-b-30">
-                        <h1 class="promo-block-title">Lucas <br/> Hermann</h1>
-                        <p class="promo-block-text"><a href="https://www.instagram.com/lucashermannph/" class="social-icons"><i class="bi bi-instagram"></i></a> @lucashermannph </p>
-                        <p>
-                            Muy buenas, soy Lucas Hermann y me dedico a la fotografía desde 2014.
-                            <br>
-                            Aunque este arte me acompaña desde que nací, ya que soy la tercera generación en mi familia en dedicarse a esto, más puntualmente a la fotografía de viaje.
-                            <br>
-                        </p>
-                        <p>
-                            Esta pasión inició al ver los recuerdos capturados por mi abuelo durante su viaje en barco por todo América. Pero esa es historia para otro día... 
-                            <br>
-                            Porque acá vas a encontrar mis recuerdos
-                        </p>
                     </div>
-
-                </div>
-                <div class="col-sm-6">
-                    <div class="promo-block-img-wrap">
-                        <img class="promo-block-img img-responsive" src="img/perfil/02.png" align="Perfil" width="400">
+                    <div class="col-sm-6">
+                        <div class="promo-block-img-wrap">
+                            <img class="promo-block-img img-responsive" src="img/perfil/02.png" align="Perfil" width="400">
+                        </div>
                     </div>
                 </div>
+                <!--// end row -->
             </div>
-            <!--// end row -->
         </div>
-    </div>
     <!--========== SLIDER ==========-->
-        <!-- GALERIA -->
-        <div id="galeria">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide> << Desliza</swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide> << Desliza</swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                    <div class="col-lg-4 margin-t-50 margin-b-50">
-                        <h3 class="text-center">Fotos mundial 2022</h3>
-                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-                            <swiper-slide><img class="logo-img" src="img/instagram/03.webp" alt="imagen1" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/02.webp" alt="imagen2" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/01.webp" alt="imagen3" width="105%"></swiper-slide>
-                            <swiper-slide><img class="logo-img" src="img/instagram/04.webp" alt="imagen4" width="105%"></swiper-slide>
-                        </swiper-container>
-                    </div>
-                </div>
+
+        <div class="timeline">
+        
+            <div class="capsula left">
+                <div class="date">10 Feb</div>
+                <i class="icon fa fa-cog"></i>
+                <div class="content">
                 
+
+                </div>
             </div>
+            <div class="capsula right">
+                <div class="date">01 Jan</div>
+                <i class="icon fa fa-certificate"></i>
+                <div class="content">
+                
+                
+                </div>
+            </div>
+            <div class="capsula left">
+                <div class="date">10 Feb</div>
+                <i class="icon fa fa-cog"></i>
+                <div class="content">
+                
+
+                </div>
+            </div>
+            <div class="capsula right">
+                <div class="date">01 Jan</div>
+                <i class="icon fa fa-certificate"></i>
+                <div class="content">
+                
+                
+                </div>
+            </div>
+            <div class="capsula left">
+                <div class="date">JUN 2010</div>
+                <i class="icon"></i>
+                <div class="content">
+                    <h3 class="text-center">Salto Grande - Concordia, Entre Ríos</h3>
+                    <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/1.jpg" alt="imagen1" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/2.jpg" alt="imagen2" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/3.jpg" alt="imagen3" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/4.jpg" alt="imagen4" width="105%"></swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+            <div class="capsula right">
+                <div class="date">JUN 2010</div>
+                <i class="icon"></i>
+                <div class="content">
+                    <h3 class="text-center">Salto Grande - Concordia, Entre Ríos</h3>
+                    <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/1.jpg" alt="imagen1" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/2.jpg" alt="imagen2" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/3.jpg" alt="imagen3" width="105%"></swiper-slide>
+                        <swiper-slide><img class="logo-img" src="img/viajes/EntreRios2010/4.jpg" alt="imagen4" width="105%"></swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+
+
+
+
         </div>
-        <!-- End galeria -->
 
 
         <!-- ACA -->
