@@ -1,3 +1,184 @@
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  }
+
+  .timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: #71ABDD;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 0px;
+  }
+
+  .capsula {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  }
+
+  .capsula.left {
+  left: 0;
+  }
+
+  .capsula.right {
+  left: 50%;
+  }
+
+  .capsula::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+  right: -10px;
+  background: #71ABDD;
+  border: 2px solid #71ABDD;
+  border-radius: 16px;
+  z-index: 1;
+  }
+
+  .capsula.right::after {
+  left: -10px;
+  }
+
+  .capsula::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  top: calc(50% - 1px);
+  right: 10px;
+  background: #71ABDD;
+  z-index: 1;
+  }
+
+  .capsula.right::before {
+  left: 8px;
+  }
+
+  .capsula .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #515769;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  }
+
+  .capsula.left .date {
+  right: -90px;
+  }
+
+  .capsula.right .date {
+  left: -90px;
+  }
+
+  .capsula .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #ffffff;
+  border: 2px solid #71ABDD;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #71ABDD;
+  z-index: 1;
+  }
+
+  .capsula.left .icon {
+  right: 56px;
+  }
+
+  .capsula.right .icon {
+  left: 56px;
+  }
+
+  .capsula .content {
+  padding: 30px 90px 30px 30px;
+  background: #b3b3b328;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  }
+
+  .capsula.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+  }
+
+  .capsula .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+  }
+
+  .capsula .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  }
+
+  @media (max-width: 1200px) {
+  .timeline::after {
+      left: 90px;
+  }
+
+  .capsula {
+      width: 100%;
+      padding-left: 120px;
+      padding-right: 30px;
+  }
+
+  .capsula.right {
+      left: 0%;
+  }
+
+  .capsula.left::after, 
+  .capsula.right::after {
+      left: 82px;
+  }
+
+  .capsula.left::before,
+  .capsula.right::before {
+      left: 100px;
+      border-color: transparent #006E51 transparent transparent;
+  }
+
+  .capsula.left .date,
+  .capsula.right .date {
+      right: auto;
+      left: 15px;
+  }
+
+  .capsula.left .icon,
+  .capsula.right .icon {
+      right: auto;
+      left: 146px;
+  }
+
+  .capsula.left .content,
+  .capsula.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+  }
+  }
 
 
 swiper-container {
@@ -94,7 +275,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  color: #aaa6a6;
   line-height: 1.4;
   margin-bottom: 15px;
 }
