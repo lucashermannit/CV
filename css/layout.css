@@ -1,4 +1,5 @@
-.timeline {
+/*
+  .timeline {
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -136,51 +137,51 @@
   }
 
   @media (max-width: 1200px) {
-  .timeline::after {
-      left: 90px;
+    .timeline::after {
+        left: 90px;
+    }
+
+    .capsula {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+
+    .capsula.right {
+        left: 0%;
+    }
+
+    .capsula.left::after, 
+    .capsula.right::after {
+        left: 82px;
+    }
+
+    .capsula.left::before,
+    .capsula.right::before {
+        left: 100px;
+        border-color: transparent #006E51 transparent transparent;
+    }
+
+    .capsula.left .date,
+    .capsula.right .date {
+        right: auto;
+        left: 15px;
+    }
+
+    .capsula.left .icon,
+    .capsula.right .icon {
+        right: auto;
+        left: 146px;
+    }
+
+    .capsula.left .content,
+    .capsula.right .content {
+        padding: 30px 30px 30px 90px;
+        border-radius: 500px 0 0 500px;
+    }
   }
 
-  .capsula {
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 30px;
-  }
-
-  .capsula.right {
-      left: 0%;
-  }
-
-  .capsula.left::after, 
-  .capsula.right::after {
-      left: 82px;
-  }
-
-  .capsula.left::before,
-  .capsula.right::before {
-      left: 100px;
-      border-color: transparent #006E51 transparent transparent;
-  }
-
-  .capsula.left .date,
-  .capsula.right .date {
-      right: auto;
-      left: 15px;
-  }
-
-  .capsula.left .icon,
-  .capsula.right .icon {
-      right: auto;
-      left: 146px;
-  }
-
-  .capsula.left .content,
-  .capsula.right .content {
-      padding: 30px 30px 30px 90px;
-      border-radius: 500px 0 0 500px;
-  }
-  }
-
-
+*/
 swiper-container {
   width: 300px;
   height: 200px;
