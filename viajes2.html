@@ -164,7 +164,7 @@ extensions
 */
 
 .time__month{
-  margin-left: var(--timelineMounthMarginLeft, .25em);
+  margin-left: var(--timelineMounthMarginLeft, .25rem);
 }
 
 /*
@@ -201,8 +201,9 @@ skin
 */
 
 .card{
-  border-radius: var(--timelineCardBorderRadius, 2px);
-  border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+  border-radius: var(--timelineCardBorderRadius, 10px);
+  border: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+  
   box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
   background-color: var(--timelineCardBackgroundColor, #fff);
 }
@@ -251,7 +252,7 @@ SKIN
   --uiTimelineMainColor: var(--timelineMainColor, #222);
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
 
-  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+  border-left: var(--timelineLineWidth, 5px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -265,7 +266,7 @@ SKIN
 
 .timeline__card{
   position: relative;
-  margin-left: var(--timelineCardLineGap, 1rem);
+  margin-left: var(--timelineCardLineGap, 1.25rem);
 }
 
 /*
@@ -281,11 +282,11 @@ SKIN
 .timeline__card::before{
   content: "";
   width: 100%;
-  height: var(--timelineCardLineWidth, 2px);
+  height: var(--timelineCardLineWidth, 8px);
   background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
 
   position: absolute;
-  top: var(--timelineCardLineTop, 1rem);
+  top: var(--timelineCardLineTop, 4%);
   left: -50%;
   z-index: -1;
 }
@@ -448,9 +449,6 @@ DEMO
                 <!-- FIN - GRUPO TARJETAS -->
 
                 <span class="timeline__year time" aria-hidden="true"></span>
-
-
-
 
             </div>
         
